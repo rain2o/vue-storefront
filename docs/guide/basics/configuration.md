@@ -173,6 +173,7 @@ This both option is used when you don't want re-attempting task of just X number
 "storeViews": {
   "multistore": false,
   "commonCache": false,
+  "commonUserCache": false,
   "mapStoreUrlsFor": ["de", "it"],
 ```
 
@@ -180,7 +181,9 @@ If the `storeViews.multistore` is set to `true` then all configs that are define
 
 `mapStoreUrlsFor` is **required**. You should add all the multistore names to the `mapStoreUrlsFor` as this property describes which storeView is enabled. It's useful when you want to turn off some store. **Important** you need to have enabled at least your default storeView (`"defaultStoreCode"`)
 
-`commonCache` is refering to local browser cache. If it's set to false (default) the cache of cart, catalog, user data etc is shared between storeViews with default prefix (shop). Otherwise each of them is stored separately (storecode-shop prefix).
+`commonCache` is refering to local browser cache. If it's set to false (default) the cache of cart, catalog data etc is shared between storeViews with default prefix (shop). Otherwise each of them is stored separately (storecode-shop prefix).
+
+`commonUserCache` is refering to local browser cache. If it's set to false (default) the cache of user data is shared between storeViews with default prefix (shop). Otherwise each of them is stored separately (storecode-shop prefix).
 
 `storeViews` section contains one or more additional store views configured to serve proper i18n translations, tax settings etc. Please find the docs for this section below.
 
@@ -278,6 +281,7 @@ Example configuration:
   "storeViews": {
     "multistore": true,
     "commonCache": false,
+    "commonUserCache": false,
     "mapStoreUrlsFor": [
       "de",
       "it"

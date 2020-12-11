@@ -434,6 +434,7 @@ Vue Storefront `StoreViews` allows you to differentiate all the basic settings p
  "storeViews": {
       "multistore": false,
       "commonCache": true,
+      "commonUserCache": true,
       "mapStoreUrlsFor": ["de", "it"],
       "de": {
         "storeCode": "de",

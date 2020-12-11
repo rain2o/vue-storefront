@@ -1035,6 +1035,7 @@ At [`vue-storefront/config/default.json`](https://github.com/DivanteLtd/vue-stor
 "storeViews": {
   "multistore": false,
   "commonCache": false,
+  "commonUserCache": false,
   "mapStoreUrlsFor": ["de", "it"],
   "de": {
     "storeCode": "de",
